@@ -1,27 +1,68 @@
-# CAB302-AI_Teacher
+# CAB302 AI Teacher
 
-## What is this?
+## Overview
 
-This is a JavaFX desktop application developed for the CAB302 course.  
-It assists teachers in managing classrooms and supports AI features such as quiz generation and a chatbot for students.
+CAB302 AI Teacher is a JavaFX desktop application developed as a group project for the CAB302 (Artificial Intelligence) course. The application assists teachers in managing classrooms and supports AI-driven features such as quiz generation and a student chatbot.
 
-We followed Agile methodology (two-week sprints), worked collaboratively in a team, and applied object-oriented principles using Java and MVC architecture.
+The project was built collaboratively using Agile methodology, with a strong focus on clean architecture, object-oriented design, and real-world development practices.
 
 ---
 
-## Features
+## Screenshots
 
-- **Quiz Maker**  
-  Create quizzes manually or generate them.
+### Login Screen
+![Login screen](src\main\resources\com\cab302ai_teacher\images/login.png)
 
-- **AI Chatbot**  
-  Students can ask questions and receive study support or explanations.
+### Student Dashboard
+![Student view](src\main\resources\com\cab302ai_teacher\images\student.png)
 
-- **User Management**  
-  Teachers and students can log in, edit personal details, and navigate with role-based functionality.
+### Teacher Dashboard
+![Teacher view](src\main\resources\com\cab302ai_teacher\images/teacher.png)
 
-- **Quiz Management**  
-  Teachers can create, edit, and delete quizzes, while students can take quizzes and receive scores.
+---
+
+## Key Features
+
+### Quiz Creation & Management
+- Create quizzes manually or generate them automatically
+- Edit, delete, and manage quizzes as a teacher
+- Students can take quizzes and receive scores
+
+### AI Chatbot
+- Students can ask questions related to course material
+- Provides study support and explanations
+
+### User Management
+- Role-based access for teachers and students
+- Login, registration, and profile editing
+- Secure credential handling
+
+### Classroom Workflow
+- Teacher-focused management tools
+- Student-focused learning interface
+- Clear separation of responsibilities through MVC
+
+---
+
+## Technical Highlights
+
+- **Object-Oriented Design**
+  - Implemented using MVC architecture
+  - Applied design patterns such as Singleton and Factory
+
+- **Agile Development**
+  - Two-week sprints
+  - Task tracking via Trello
+  - Regular stand-ups and meeting documentation
+
+- **Security**
+  - Passwords hashed using SHA-256
+  - Email validation and strong password enforcement
+
+- **Continuous Integration**
+  - Automated Maven builds
+  - Unit testing via GitHub Actions
+  - Javadoc generation and deployment
 
 ---
 
@@ -30,65 +71,44 @@ We followed Agile methodology (two-week sprints), worked collaboratively in a te
 - Java 17+
 - JavaFX (UI)
 - SQLite (Database)
-- Maven (Build tool)
+- Maven (Build & Dependency Management)
 - JUnit (Testing)
 - GitHub Actions (CI/CD)
 
 ---
 
-## How to Run It
+## My Role & Contributions
 
-1. Install Java 17 or newer
-2. Open the project in an IDE (e.g., IntelliJ)
-3. Set up JavaFX properly
-4. Run `src/main/java/com/cab302ai_teacher/Main.java`
-5. The application will start with the login screen
+**Zach Morse** — Designer / Backend Developer
 
----
+- Created low and medium fidelity UI designs
+- Implemented the manual quiz creation functionality
+- Contributed to backend logic and data handling
+- Maintained meeting minutes and assisted with sprint organisation
 
-## How to Test It
-
-- Navigate to `src/test/` to find unit tests for:
-  - DatabaseManager
-  - UserDAO
-  - Validator
-- Run tests using your IDE or Maven
-- Some test cases are meant to fail (e.g., duplicate email registration)
+This role required balancing design considerations with backend implementation while working closely with frontend and fullstack teammates.
 
 ---
 
-## Security
+## Team Contributions
 
-- Passwords are hashed using SHA-256 before storage
-- The app enforces email format and strong password requirements
+This project was completed collaboratively with the following team members:
 
----
+- **Kynan Stoakes** — Frontend Developer  
+  UI styling, stage navigation, user detail editing, troubleshooting
 
-## Continuous Integration
+- **Kenneth Lee** — Fullstack Developer  
+  REST API implementation, database management, password hashing, test creation
 
-GitHub Actions runs automated workflows on every push and pull request:
-
-- Maven build
-- Unit tests
-- Javadoc generation
-- Test report publication
-
+- **Sanghun Han** — Refactorer / CI Integrator  
+  Code refactoring using design patterns, GitHub Actions setup, Trello configuration
 
 ---
 
-## Team and Responsibilities
+## How to Run the Application
 
-| Name                      | Role                       | Contributions                                                                |
-| ------------------------- | -------------------------- | ---------------------------------------------------------------------------- |
-| Zach (N12038431)          | Designer / Backend Support | Low/Medium fidelity designs, implemented manual quiz, meeting minutes        |
-| Kynan Stoakes (N11477504) | Frontend Developer         | UI styling, user edit details, troubleshooting, stage navigation             |
-| Kenneth Lee (N11532386)   | Fullstack Developer        | REST API implementation, password hashing, DB management, test case creation |
-| Sanghun Han (N11680628)   | Refactorer / CI Integrator | Refactoring using Singleton/Factory patterns, GitHub Actions, Trello setup   |
-
----
-
-## Notes
-
-- The SQLite database (`ai_teacher.db`) is regenerated if deleted
-- Project includes modular Javadoc for all classes and controllers
-- Javadoc is auto-deployed to GitHub Pages via CI/CD
+1. Install **Java 17 or newer**
+2. Clone the repository
+3. Open the project in an IDE (e.g., IntelliJ IDEA)
+4. Ensure JavaFX is properly configured
+5. Run

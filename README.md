@@ -14,10 +14,10 @@ The project was built collaboratively using Agile methodology, with a strong foc
 ![Login screen](src/main/resources/com/cab302ai_teacher/images/Login.png)
 
 ### Student Dashboard
-![Student view](src\main\resources\com\cab302ai_teacher\images\Student.png)
+![Student view](src/main/resources/com/cab302ai_teacher/images/Student.png)
 
 ### Teacher Dashboard
-![Teacher view](src\main\resources\com\cab302ai_teacher\images/Teacher.png)
+![Teacher view](src/main/resources/com/cab302ai_teacher/images/Teacher.png)
 
 ---
 
